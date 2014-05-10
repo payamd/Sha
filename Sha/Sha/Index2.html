@@ -1,0 +1,295 @@
+﻿<html ng-app>
+<head>
+    <title>Demo</title>
+    <script type="text/javascript" src="js/lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/lib/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+</head>
+<body style="background-color:goldenrod;">
+    <div class="container" style="background-color: white; margin-top: 20px; margin-bottom: 20px; border-radius: 5px;">
+        <form class=" form-horizontal">
+            <div style="float:right;"> _  [ ]  X</div>
+            <fieldset class="col-lg-12">
+                <!-- Form Name -->
+                <legend>Contact manager</legend>
+                <div class="col-lg-6 " style="background-color: lightskyblue; margin-top: 20px; margin-bottom: 20px; border-radius: 5px;">
+                    <div style="float:right;"> Edit mode     _  [ ]  X</div>
+                    <fieldset class="col-lg-12" style="margin-bottom:15px;">
+                        <legend>Name:</legend>
+
+                        <div class="col-lg-4">
+                            <label>First Name</label>
+                            <input type="text" class="form-control" name="First Name" ng-model="firstName" />
+                        </div>
+                        <div class="col-lg-4">
+                            <label>Last Name</label>
+                            <input type="text" class="form-control" name="Last Name" ng-model="lastName" />
+                        </div>
+                        <div class="col-lg-4">
+                            <label>Gender</label>
+                            <br />
+                            <label class="radio-inline">
+                                <input type="radio" name="Gender" value="Male" checked="checked" />Male
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="Gender" value="Female" />Female
+                            </label>
+                        </div>
+                        
+
+
+
+                    </fieldset>
+
+                    <!-- Form phone -->
+                    <fieldset class="col-lg-12" style=" margin-bottom:15px;">
+                        <legend>Phone:</legend>
+                        <div class="col-lg-2">
+                            <label>Title</label>
+                            <input type="text" class="form-control" name="PhoneTitle" />
+                        </div>
+                        <div class="col-lg-4">
+                            <label>Phone number</label>
+                            <input type="text" class="form-control" name="phone number" />
+                        </div>
+
+                        <!-- Textarea -->
+                        <div class="col-md-5">
+                            <label for="textarea">Comment</label>
+                            <textarea class="form-control" id="textarea" name="textarea">Add your comment here . . . </textarea>
+                        </div>
+                        <div class="col-lg-1">
+                                                        <br />
+                            <a><img src="Images/forms/add.png" style="height:40px; width:40px;" /></a>
+                        </div>
+                    </fieldset>
+
+                    <br />
+
+                    <!-- Form Address -->
+                    <fieldset class="col-lg-12" style=" margin-bottom:15px;">
+                        <legend>Address:</legend>
+                        <div class="col-lg-2 ">
+                            <label>Title</label>
+                            <input type="text" class="form-control" name="AddressTitle" />
+                        </div>
+                        <div class="col-lg-10">
+                            <label>Address</label>
+                            <input type="text" class="form-control" name="Address1" />
+                        </div>
+                        <div class="col-lg-12">
+                            <label>Address</label>
+                            <input type="text" class="form-control" name="Address2" />
+                        </div>
+                        <div class="col-lg-3">
+                            <label>City</label>
+                            <input type="text" class="form-control" name="AddressCity" />
+                        </div>
+                        <div class="col-lg-3">
+                            <label>State</label>
+                            <input type="text" class="form-control" name="AddressState" />
+                        </div>
+                        <div class="col-lg-3">
+                            <label>Zip5</label>
+                            <input type="text" class="form-control" name="AddressZip5" />
+                        </div>
+                        <div class="col-lg-3">
+                            <label>Zip4</label>
+                            <input type="text" class="form-control" name="AddressZip4" />
+                        </div>
+
+                        <!-- Textarea -->
+
+                        <div class="col-md-11">
+                            <label for="textarea">Comment</label>
+                            <textarea class="form-control" id="textarea" name="textarea">Add your comment here . . . </textarea>
+                        </div>
+                        <div class="col-lg-1">
+                               <br /><br />
+                            <a><img src="Images/forms/add.png" style="height:40px; width:40px;" /></a>
+                        </div>
+                    </fieldset>
+
+
+                    <!-- Form Email -->
+                    <fieldset class="col-lg-12" style="margin-bottom:15px;">
+                        <legend>Email</legend>
+                        <div class="col-lg-2">
+                            <label>Title</label>
+                            <input type="text" class="form-control" name="EmailTitle" />
+                        </div>
+                        <div class="col-lg-4">
+                            <label>Email</label>
+                            <input type="text" class="form-control" name="AddressEmail" />
+                        </div>
+                        <!-- Textarea -->
+                        <div class="col-md-5">
+                            <label for="textarea">Comment</label>
+                            <textarea class="form-control" id="textarea" name="textarea">Add your comment here . . . </textarea>
+                        </div>
+                        <div class="col-lg-1">
+                            <br />
+                            <a><img src="Images/forms/add.png" style="height:40px; width:40px;" /></a>
+                        </div>
+                    </fieldset>
+
+
+                    <!-- Button (Double) -->
+                    <div class="form-group">
+                        <div class="col-md-12" style=" margin-top:25px;">
+                            <button id="button1id" name="button1id" class="btn btn-info col-lg-8">Save and Update</button>
+                            <button id="button2id" name="button2id" class="btn btn-danger col-lg-4">Cancle</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--second field-->
+
+                <div class="col-lg-6" style="background-color:lightgoldenrodyellow; margin-top: 20px; margin-bottom: 20px; border-radius: 5px;">
+                    <div style="float:right;">View mode   _  [ ]  X</div>
+                    <fieldset class="col-lg-12" style="margin-bottom:15px;">
+                        <legend>Name:</legend>
+
+                        <div class="col-lg-3">
+                            <label>First Name</label>
+                            <input type="text" class="form-control " name="First Name" disabled value="{{firstName}}" />
+                        </div>
+                        <div class="col-lg-3">
+                            <label>Last Name</label>
+                            <input type="text" class="form-control" name="Last Name" disabled value="{{lastName}}" />
+                        </div>
+                        <div class="col-lg-5">
+                            <label>Gender</label>
+                            <br />
+                            <label class="radio-inline">
+                                <input type="radio" name="Gender" value="Male" checked="checked" disabled />Male
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="Gender" value="Female" disabled />Female
+                            </label>
+                        </div>
+                        <div class="col-lg-1">
+                            <br />
+                            <a><img src="Images/forms/pencil.png" style="height:30px; width:30px;" /></a>
+
+                        </div>
+
+                        
+                    </fieldset>
+
+                    <!-- Form phone -->
+                    <fieldset class="col-lg-12" style=" margin-bottom:15px;">
+                        <legend>Phone:</legend>
+                        <div class="col-lg-2">
+                            <label>Title</label>
+                            <input type="text" class="form-control" name="PhoneTitle" disabled />
+                        </div>
+                        <div class="col-lg-4">
+                            <label>Phone number</label>
+                            <input type="text" class="form-control" name="phone number" disabled />
+                        </div>
+
+                        <!-- Textarea -->
+                        <div class="col-lg-5">
+                            <label for="textarea">Comment</label>
+                            <textarea class="form-control" id="textarea" name="textarea" disabled> </textarea>
+                        </div>
+                        <div class="col-lg-1">
+                            <br />
+                            <br />
+                        <a><img src="Images/forms/pencil.png" style="height:30px; width:30px;" /></a>
+                        </div>
+                    </fieldset>
+                   
+
+                    <br />
+
+                    <!-- Form Address -->
+                    <fieldset class="col-lg-12" style=" margin-bottom:15px;">
+                        <legend>Address:</legend>
+                        <div class="col-lg-2 ">
+                            <label>Title</label>
+                            <input type="text" class="form-control" name="AddressTitle" disabled />
+                        </div>
+                        <div class="col-lg-10">
+                            <label>Address</label>
+                            <input type="text" class="form-control" name="Address1" disabled />
+                        </div>
+                        <div class="col-lg-12">
+                            <label>Address</label>
+                            <input type="text" class="form-control" name="Address2" disabled />
+                        </div>
+                        <div class="col-lg-3">
+                            <label>City</label>
+                            <input type="text" class="form-control" name="AddressCity" disabled />
+                        </div>
+                        <div class="col-lg-3">
+                            <label>State</label>
+                            <input type="text" class="form-control" name="AddressState" disabled />
+                        </div>
+                        <div class="col-lg-3">
+                            <label>Zip5</label>
+                            <input type="text" class="form-control" name="AddressZip5" disabled />
+                        </div>
+                        <div class="col-lg-3">
+                            <label>Zip4</label>
+                            <input type="text" class="form-control" name="AddressZip4" disabled />
+                        </div>
+
+                        <!-- Textarea -->
+
+                        <div class="col-md-11">
+                            <label for="textarea">Comment</label>
+                            <textarea class="form-control" id="textarea" name="textarea" disabled></textarea>
+                        </div>
+                        <div class="col-lg-1">
+                            <br />
+                            <br />
+                            <a><img src="Images/forms/pencil.png" style="height:30px; width:30px;" /></a>
+                        </div>
+
+
+                    </fieldset>
+
+
+                    <br />
+
+                    <!-- Form Email -->
+                    <fieldset class="col-lg-12" style="margin-bottom:15px;">
+                        <legend>Email</legend>
+                        <div class="col-lg-2">
+                            <label>Title</label>
+                            <input type="text" class="form-control" name="EmailTitle" disabled />
+                        </div>
+                        <div class="col-lg-4">
+                            <label>Email</label>
+                            <input type="text" class="form-control" name="AddressEmail" disabled />
+                        </div>
+                        <!-- Textarea -->
+                        <div class="col-md-5">
+                            <label for="textarea">Comment</label>
+                            <textarea class="form-control" id="textarea" name="textarea" disabled></textarea>
+                        </div>
+                        <div class="col-lg-1">
+                            <br />
+                            <br />
+                            <a><img src="Images/forms/pencil.png" style="height:30px; width:30px;" /></a>
+                        </div>
+                    </fieldset>
+
+                    <br />
+
+                    <!-- Button (Double) -->
+                    <div class="form-group">
+                        <div class="col-md-12" style=" margin-top:25px;">
+                            <button id="button1id" name="button1id" class="btn btn-info col-lg-8">Edit</button>
+                            <button id="button2id" name="button2id" class="btn btn-danger col-lg-4">Cancle</button>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
