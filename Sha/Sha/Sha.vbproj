@@ -57,9 +57,7 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="js\controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
@@ -100,6 +98,7 @@
     <Content Include="img\glyphicons-halflings-regular.svg" />
     <Content Include="index.html" />
     <Content Include="Index2.html" />
+    <Content Include="js\controllers\disabledCtrl.js" />
     <Content Include="js\lib\angular-resource.min.js" />
     <Content Include="js\lib\angular.min.js" />
     <Content Include="js\lib\bootstrap.js" />
